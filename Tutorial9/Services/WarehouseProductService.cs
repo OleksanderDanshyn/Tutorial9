@@ -134,7 +134,7 @@ public class WarehouseProductService : IWarehouseProductService
         command.Connection = connection;
         await connection.OpenAsync();
 
-        command.CommandText = "asdasds";
+        command.CommandText = "proc.sql";
         command.CommandType = CommandType.StoredProcedure;
         
         command.Parameters.AddWithValue("@idWarehouse", 1);
